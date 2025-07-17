@@ -68,7 +68,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       <div className="bg-purple-500 animation-opacity size-80 bottom-0 right-0 absolute blur-[500px] firefox-blur" />
       <div className="flex gap-2 items-center w-full justify-center"></div>
       <h1 className="text-5xl font-bold tracking-tighter my-8 text-center">
-        ¡An error just ocurred!
+        An error just ocurred
       </h1>
 
       <p className="font-mono opacity-75 text-lg text-center">

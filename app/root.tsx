@@ -90,6 +90,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         onClick={() => {
           setShowStack(!showStack);
         }}
+        variant="secondary"
         className="left-4 bottom-4 absolute"
       >
         View stack trace

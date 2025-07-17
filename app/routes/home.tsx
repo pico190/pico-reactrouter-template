@@ -1,13 +1,20 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: "" }, { name: "description", content: "" }];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="h-[100svh] flex items-center flex-col gap-2 justify-center">
+      <h1 className="font-bold text-7xl tracking-tighter">Index page</h1>
+      <p className=" tracking-tighter">
+        ¡Thanks for using{" "}
+        <code className="bg-white/5 px-1 border-1 rounded-sm py-0.5">
+          create-pico-app
+        </code>
+        !
+      </p>
+    </div>
+  );
 }
